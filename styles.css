@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #0077cc;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    width: 150px;
+    padding: 0.5em;
+    border: 2px solid #ffcc00;
+    border-radius: 10px;
+    outline: none;
+    transition: width 0.4s ease, box-shadow 0.4s ease;
+    font-size: 1em;
+}
+
+.search-bar:focus {
+    width: 250px;
+    box-shadow: 0 0 10px #ffcc00;
+}
+
+h1, h2 {
+    text-align: center;
+    margin: 10px 0;
+}
+
+section, main {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 1em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section p, main p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.profile-pic {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.5s ease;
+}
+
+.profile-pic:hover {
+    transform: rotate(10deg);
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 1em 0;
+    font-size: 0.9em;
+    color: #555;
+    background: #f4f4f4;
+}
+
+footer p {
+    margin: 5px;
+}
+.course-img {
+    width: 50%; /* Adjust the width as needed (50% makes it half the container's width) */
+    height: auto; /* Maintains aspect ratio */
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border-radius: 10px; /* Optional: add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add a subtle shadow */
+}
+
+/* Other existing styles */
+
+.student-data {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.student-data th, .student-data td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.student-data th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.student-data tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.student-data tr:hover {
+    background-color: #f1f1f1;
+}
